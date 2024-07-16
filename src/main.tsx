@@ -7,6 +7,7 @@ import Dashboard from "./Org-Dashboard/Dashboard.tsx";
 import Settings from "./Org-Dashboard/Settings.tsx";
 import Customers from "./Org-Dashboard/Customers.tsx";
 import Events from "./Org-Dashboard/Events.tsx";
+import Register from "./auth/Register.tsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboard/:orgId/events",
     element: <Events />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
   },
 ]);
 
