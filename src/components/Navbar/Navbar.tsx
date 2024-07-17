@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const Navbar = () => {
   return (
-    <div className="flex w-full items-center justify-between bg-white h-20 px-10 mt-5">
+    <div className="flex w-full items-center justify-between bg-white h-20  mt-5">
       <div className="">
         <img
           src="/wildflowerslogo.svg"
@@ -26,13 +26,13 @@ const Navbar = () => {
         <Link to={"#"}>
           <Button
             variant="ghost"
-            className="rounded-2xl px-7 font-bold text-lg h-[45px] text-main-800"
+            className="rounded-2xl px-7 font-bold text-lg h-[45px] text-main-800 "
           >
             Sign in
           </Button>
         </Link>
         <Link to={"/dashboard/123"}>
-          <Button className="rounded-2xl px-7 font-bold text-lg h-[45px] bg-main-800 ">
+          <Button className="rounded-2xl px-7 font-bold text-lg h-[45px] bg-main-800  hover:bg-main-500 ">
             Sign up
           </Button>
         </Link>
