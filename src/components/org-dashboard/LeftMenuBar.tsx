@@ -10,16 +10,19 @@ const LeftMenuBar = () => {
   return (
     <div className="flex w-72 bg-white h-screen border-r border-sky-100 shadow py-5 flex-col justify-between max-sm:hidden   max-lg:w-[60px] z-10 fixed">
       <div>
-        <img
-          src={"/wildflowerslogo.svg"}
-          alt="logo"
-          className="w-64 flex justify-center mx-auto max-lg:hidden"
-        />
-        <img
-          src="/wildflowersmoblogo.svg"
-          alt="mobile-logo"
-          className="hidden max-lg:flex justify-center mx-auto"
-        />
+        <Link to={"/"}>
+          <img
+            src={"/wildflowerslogo.svg"}
+            alt="logo"
+            className="w-64 flex justify-center mx-auto max-lg:hidden"
+          />
+          <img
+            src="/wildflowersmoblogo.svg"
+            alt="mobile-logo"
+            className="hidden max-lg:flex justify-center mx-auto"
+          />
+        </Link>
+
         <div className="mt-16">
           {leftNav.map((item, index) => {
             const isActive =

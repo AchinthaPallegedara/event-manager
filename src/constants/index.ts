@@ -128,3 +128,70 @@ export const chartData = [
   { date: "2024-06-29", desktop: 103, mobile: 160 },
   { date: "2024-06-30", desktop: 446, mobile: 400 },
 ];
+
+export const recentEvents = [
+  {
+    eventName: "Event 1",
+    location: "Colombo",
+    date: "2021-09-01",
+  },
+  {
+    eventName: "Event 2",
+    location: "Colombo",
+    date: "2021-09-01",
+  },
+  {
+    eventName: "Event 3",
+    location: "Colombo",
+    date: "2021-09-01",
+  },
+  {
+    eventName: "Event 4",
+    location: "Colombo",
+    date: "2021-09-01",
+  },
+  {
+    eventName: "Event 5",
+    location: "Colombo",
+    date: "2021-09-01",
+  },
+];
+
+export const recentSales = [
+  {
+    customerImg: "/userIcon.png",
+    customername: "Achintha Pallegedara",
+    amount: "10,000",
+    phone: "0712345678",
+  },
+  {
+    customerImg: "/userIcon.png",
+    customername: "Achintha Pallegedara",
+    amount: "10,000",
+    phone: "0712345678",
+  },
+  {
+    customerImg: "/userIcon.png",
+    customername: "Achintha Pallegedara",
+    amount: "10,000",
+    phone: "0712345678",
+  },
+  {
+    customerImg: "/userIcon.png",
+    customername: "Achintha Pallegedara",
+    amount: "10,000",
+    phone: "0712345678",
+  },
+  {
+    customerImg: "/userIcon.png",
+    customername: "Achintha Pallegedara",
+    amount: "10,000",
+    phone: "0712345678",
+  },
+  {
+    customerImg: "/userIcon.png",
+    customername: "Achintha Pallegedara",
+    amount: "10,000",
+    phone: "0712345678",
+  },
+];
