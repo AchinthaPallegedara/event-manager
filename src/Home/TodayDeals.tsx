@@ -1,42 +1,32 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import DealCard from "../components/cards/DealCard";
+import { todaysDeals } from "../constants";
+import { Carousel } from "../components/ui/apple-cards-carousel";
 
 const TodayDeals = () => {
+  const dealCards = todaysDeals.map((deal, index) => (
+    <DealCard
+      key={index}
+      ImgLink={deal.imgLink}
+      EventName={deal.EventName}
+      EventDate={deal.EventDate}
+      EventTime={deal.EventTime}
+      EventLocation={deal.EventLocation}
+      BuyLink={deal.BuyLink}
+      BeforePrice={deal.BeforePrice}
+      DiscountedPrice={deal.DiscountedPrice}
+    />
+  ));
   return (
-    <div className="flex flex-col  my-20 w-full">
-      <div className="flex w-full justify-between items-center">
-        <div className="space-x-5 flex">
-          <div className="rounded-full  font-bold text-lg p-3 bg-main-800 text-white  hover:bg-main-500 cursor-pointer">
-            <ChevronLeft />
-          </div>
-          <div className="rounded-full  font-bold text-lg p-3 bg-main-800 text-white  hover:bg-main-500 cursor-pointer">
-            <ChevronRight />
-          </div>
-        </div>
-        <h3 className="text-7xl font-semibold text-main-800">
-          <span className="text-main-500">Today's </span>Deals
-        </h3>
-      </div>
-      <div className="mt-20  flex space-x-10 ">
-        <DealCard
-          ImgLink="/hero1.svg"
-          EventName="GOLDEN LEGENDS WITH BAPPALA    "
-          EventDate="Jul 13, 2024"
-          EventTime="06.30 PM"
-          EventLocation="Nelum Pokuna indoor Theater"
-          BuyLink="/"
-          BeforePrice="5000.00"
-          DiscountedPrice="4000.00"
-        />
-        <DealCard
-          ImgLink="/hero2.svg"
-          EventName="GOLDEN LEGENDS WITH BAPPALA    "
-          EventDate="Jul 13, 2024"
-          EventTime="06.30 PM"
-          EventLocation="Nelum Pokuna indoor Theater"
-          BuyLink="/"
-          BeforePrice="2300.00"
-          DiscountedPrice="1000.00"
+    <div className="flex flex-col w-full">
+      <div className="mt-20  flex  ">
+        <Carousel
+          items={dealCards}
+          titleType="type2"
+          title={
+            <>
+              <span className="text-main-500">Today's </span>Deals
+            </>
+          }
         />
       </div>
     </div>

@@ -21,7 +21,7 @@ const EventCard = ({
   BuyLink,
 }: EventCardProps) => {
   return (
-    <div className="relative flex flex-col w-[300px] h-[470px]  rounded-2xl shadow border   overflow-hidden hover:shadow-xl mb-10">
+    <div className="relative flex flex-col w-[300px] h-[470px]  rounded-2xl shadow border  mx-2 overflow-hidden hover:shadow-xl mb-10">
       <div className="p-3">
         <div className="h-[270px] rounded-2xl bg-green-500">
           <img
